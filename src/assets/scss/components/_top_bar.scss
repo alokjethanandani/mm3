@@ -1,0 +1,49 @@
+//homepage logo 
+.logo--index { 
+  margin-bottom: 20px; 
+  display: block; 
+  width: 110px;
+  height: 87px;
+  background: url(/assets/img/mobile-logo-black.svg) no-repeat; 
+  @include breakpoint(large) { 
+    width: 77px; 
+    height: 83px; 
+    background: url(/assets/img/desktop-logo-black.svg) no-repeat; 
+  }
+}
+
+//homepage logo
+.logo--index span { 
+  display: none; 
+}
+
+.logo--not--index a { 
+  @include breakpoint(small) { 
+    margin-top: 50px; 
+  }
+  @include breakpoint(large) { 
+    margin-top: 80px;
+    margin-bottom: $gutter * 3; 
+    width: 186px; 
+    height: 146px; 
+    background: url(/assets/img/desktop-logo-yellow.svg) no-repeat; 
+  }
+  display: block;   
+  margin-left: auto;
+  margin-right: auto;
+  width: 110px;
+  height: 87px;
+  background: url(/assets/img/mobile-logo-yellow.svg) no-repeat; 
+
+}
+
+.logo--not--index a span { 
+  display: none; 
+}
+
+.top-bar { 
+  z-index: 1;
+  position: absolute;
+  right: 0;
+  background: none; 
+}

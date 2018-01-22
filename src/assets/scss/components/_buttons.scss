@@ -1,0 +1,93 @@
+.block-links .link-button { 
+  display: block; 
+}
+
+.button--reveresed {
+  color: $secondary-color !important; 
+  border: 1px solid $secondary-color !important; 
+  text-transform: uppercase;
+  font-size: rem-calc(20);
+  &:hover { 
+    background-color: $secondary-color !important; 
+    color: $primary-color !important; 
+  }
+}
+
+.button { 
+  @include button-hollow;
+  color: $primary-color; 
+  border: 1px solid $primary-color; 
+  text-transform: uppercase;
+  font-size: rem-calc(20);
+  &:hover { 
+    background-color: $primary-color; 
+    color: $secondary-color; 
+    border: 1px solid $primary-color;  
+  }    
+}
+
+.button.secondary { 
+  background-color: rgba(0,0,0,0) !important;
+  border: none !important;
+  border-color: rgba(0,0,0,0) !important;  
+  color: $primary-color; 
+  text-transform: uppercase;
+  font-size: rem-calc(20);
+  &:hover { 
+    background-color: rgba(0,0,0,0) !important; 
+    color: $secondary-color !important; 
+    border: none !important;  
+  }     
+}
+
+.link-button { 
+  color: $primary-color; 
+  text-transform: uppercase;
+  font-size: rem-calc(20); 
+}
+
+.link-button--reversed { 
+  color: $secondary-color; 
+  &:hover { 
+    color: $secondary-color;
+  }
+  &:active { 
+    color: $secondary-color; 
+  }
+}
+
+a { 
+  text-decoration: none;
+  color: $primary-color; 
+  display: inline;
+  position: relative;
+  overflow: hidden;
+  &:hover { 
+    text-decoration: none;
+    color: $primary-color;
+  }
+  &:active { 
+    text-decoration: none;
+    color: $primary-color;
+  }  
+}
+
+a:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: -5px;
+  background: $primary-color;
+  height: 1px;
+  transition-property: left right;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+a:hover:after,
+a:focus:after,
+a:active:after {
+  right: 0;
+}
+

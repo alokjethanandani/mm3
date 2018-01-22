@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="70px" height="81px" viewBox="0 0 70 81" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>build-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="v2---Mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2-Approach" transform="translate(-125.000000, -1231.000000)" fill="#FCFC00">
+            <g id="build-icon" transform="translate(125.000000, 1231.000000)">
+                <polyline id="Fill-1" points="12.784 40.592 26.932 33.788 26.932 30.256 11.43 38.697 11.43 42.669 26.932 51.145 26.932 47.652 12.784 40.592"></polyline>
+                <polyline id="Fill-2" points="37.386 24.668 31.358 56.33 32.527 56.33 38.622 24.668 37.386 24.668"></polyline>
+                <polyline id="Fill-3" points="43.05 47.676 43.05 51.171 58.57 42.669 58.57 38.743 43.05 30.299 43.05 33.748 57.204 40.675 43.05 47.676"></polyline>
+                <path d="M69.285,60.291 L69.285,20.707 L34.999,0.912 L0.715,20.706 L0.715,60.294 L34.999,80.088 L69.285,60.291 L69.285,60.291 Z M1.82,21.343 L1.945,21.271 L34.999,2.188 L68.18,21.344 L68.18,59.656 L34.999,78.812 L1.82,59.656 L1.82,21.343 L1.82,21.343 Z" id="Fill-4"></path>
+            </g>
+        </g>
+    </g>
+</svg>

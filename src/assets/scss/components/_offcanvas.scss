@@ -1,0 +1,59 @@
+$offcanvas-full-screen-bg: rgba($primary-color,.96);
+$offcanvas-full-screen-side: right;
+$offcanvas-full-screen-closebutton-size: 4rem;
+
+.menu-icon { 
+  float: right; 
+}
+
+.page__home .menu-icon.dark::after { 
+  background: $secondary-color;
+  box-shadow: 0 7px 0 $secondary-color, 0 14px 0 $secondary-color;  
+}
+
+.page__not__home .menu-icon.dark::after {  
+  background: $primary-color;
+  box-shadow: 0 7px 0 $primary-color, 0 14px 0 $primary-color;
+}
+
+.offcanvas-full-screen-close { 
+  position: absolute;
+  top: 0; 
+  right: 14px; 
+  font-weight: 100;
+  color: $secondary-color;
+}
+
+.offcanvas-full-screen {
+  @include off-canvas-base($background: $offcanvas-full-screen-bg, $transition: 0.3s ease-in-out);
+  @include off-canvas-position($position: $offcanvas-full-screen-side, $size: 100%);
+}
+
+.offcanvas-full-screen-inner {
+  padding: rem-calc(24);
+  text-align: center;
+}
+
+.offcanvas-full-screen-menu {
+  margin-top: 25% !important; 
+  @include menu-base;
+  @include menu-direction(vertical);
+  a { 
+    color: $secondary-color; 
+    font-size: rem-calc(24);
+    text-transform: uppercase;
+    line-height: rem-calc(72);
+  }
+  a:hover, a:active { 
+    color: $secondary-color; 
+    font-weight: 400;
+  }
+}
+
+.offcanvas-full-screen-close {
+  color: $white;
+  font-size: $offcanvas-full-screen-closebutton-size;
+  &:hover { 
+    font-weight: 100; 
+  }
+}

@@ -1,0 +1,72 @@
+.home__hero { 
+  z-index: 1;
+  position: absolute;
+  @include breakpoint(large) {  
+    top: 50%; 
+    margin-top: -203px;
+  }
+}
+
+.list--container { 
+  margin-bottom: $gutter * 2; 
+}
+
+.list--outer { 
+  clear: both;
+  display: block;
+  overflow: hidden;
+  margin-left: 0; 
+  margin-bottom: rem-calc(60);
+}
+
+.list--outer, 
+.icon--container { 
+  list-style: none; 
+}
+
+.icon--container { 
+  width: 100%; 
+  text-align: center; 
+  display: inline-block;
+  float: left; 
+  @include breakpoint(large) { width: 170px; }
+  @include breakpoint(medium down) { 
+    margin-bottom: $gutter; 
+  }  
+}
+
+.desc--inner { 
+  width: 100%; 
+  @include breakpoint(large) { 
+    margin-left: $gutter; 
+    width: calc(100% - 200px); 
+  }
+  display: inline-block;
+  float: left; 
+}
+
+/*----------PAGE SPECIFIC CODE------------*/
+
+//----- Approach page 
+.pull--up--lead--section .list--container { 
+  @include breakpoint(small) { margin-top: $gutter * 2; }
+  @include breakpoint(medium) { margin-top: $gutter * 1.33; }
+  @include breakpoint(large) { margin-top: -($gutter * 2.5); }
+}
+
+@include breakpoint(large) { 
+  .find--icon { margin-top: 20px; }
+  .iterate--icon { }
+  .prototype--icon { margin-top: 20px; }
+  .build--icon { margin-top: 5px; }
+  .analyze--icon { margin-top: 10px; }
+}
+
+//---- Work Page 
+@include breakpoint(large) { 
+.icon--fundbox { margin-top: 5px; }
+.icon--counsyl { margin-top: 10px; }
+.icon--zurb { margin-top: 15px; }
+.item--heading--mechanismm { margin-top: 15px; }
+.icon--magento { margin-top: 5px; }
+}
