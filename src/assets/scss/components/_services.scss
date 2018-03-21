@@ -1,0 +1,64 @@
+@include breakpoint(small only) {
+  .services--heading { 
+    margin-top: 0; 
+  }
+  .services-icon { 
+    margin-top: $gutter / 2;
+  }
+} 
+
+
+@include breakpoint(medium only) { 
+  @include breakpoint(portrait) { 
+    .services-desc { 
+      font-size: rem-calc(14);
+    }
+
+    .skills-copy { 
+      font-size: rem-calc(14);
+    }
+
+    .services--heading { 
+      font-size: rem-calc(18);
+      font-weight: bold;
+    }
+  }
+}
+
+.services-content-item { 
+  padding-right: $gutter / 2; 
+  padding-left: $gutter / 2;
+
+  @include breakpoint(small only) { 
+    .services--heading { 
+      margin-top: 0; 
+      margin-bottom: 0; 
+    }
+  }
+
+}
+
+.services-desc { 
+  margin-top: $gutter / 2;
+} 
+
+.skills-copy { 
+  clear: both;
+  font-size: rem-calc(15);
+  line-height: rem-calc(21); 
+  strong { 
+    margin-top: $gutter / 2; 
+    margin-bottom: $gutter / 4; 
+    text-transform: uppercase; 
+    font-size: rem-calc(13);
+    display: block;
+    font-weight: bold;
+  }
+}
+
+.services--heading { 
+  margin-top: $gutter / 2;
+  color: $primary-color;
+  font-weight: 500; 
+  text-align: center; 
+} 

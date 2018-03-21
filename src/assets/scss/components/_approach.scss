@@ -1,0 +1,56 @@
+.approach-desc { 
+  font-size: rem-calc(16); 
+  line-height: rem-calc(24);
+}
+
+@include breakpoint(small only) { 
+  .approach-content-item .section--heading,
+  .approach-content-item .lead,
+  .approach-content-item p,
+  .approach-content-item { 
+    text-align: left;
+    padding-left: $gutter / 4;
+    padding-right: $gutter / 4;  
+  }
+}
+
+.approach-content-item { 
+  .big--icon { 
+    margin-bottom: $gutter / 4;
+  }
+  @include breakpoint(medium down) { 
+    .big--icon { width: 200px; }
+  }
+
+  @include breakpoint(large) { 
+    .big--icon { width: 300px; }  
+  }  
+
+  .approach--play--win { }
+
+  .section--heading { 
+    margin-top: $gutter; 
+  }
+  .lead { 
+    @include breakpoint(medium up) { 
+      width: 70%; 
+      margin: 0 auto $gutter / 2;
+    }  
+     
+  }
+}
+
+//----- Approach page 
+.pull--up--lead--section .list--container { 
+  @include breakpoint(small) { margin-top: $gutter * 2; }
+  @include breakpoint(medium) { margin-top: $gutter * 1.33; }
+  @include breakpoint(large) { margin-top: -($gutter * 2.5); }
+}
+
+@include breakpoint(large) { 
+  .find--icon { margin-top: 20px; }
+  .iterate--icon { }
+  .prototype--icon { margin-top: 20px; }
+  .build--icon { margin-top: 5px; }
+  .analyze--icon { margin-top: 10px; }
+}

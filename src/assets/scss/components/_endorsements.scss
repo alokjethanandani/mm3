@@ -1,0 +1,58 @@
+@include breakpoint(small only) { 
+  .endorsement-2, 
+  .endorsement-3 { 
+    display: none; 
+  }
+
+}
+
+@include breakpoint(medium only) {
+  .endorsement-3 { 
+    display: none; 
+  }
+}
+
+.endorsements-content-item { 
+  padding-right: $gutter / 2;
+  padding-left: $gutter / 2; 
+
+}
+
+.endorser--heading { 
+  font-size: rem-calc(24); 
+  margin-bottom: 0; 
+  font-weight: 300; 
+  text-align: center; 
+  @include breakpoint(large) { 
+    text-align: center;  
+  }
+
+}
+
+.endorser--title { 
+  font-weight: 400; 
+  font-size: rem-calc(18);
+  text-align: center; 
+}
+
+.endorsement--copy { 
+  text-align: left; 
+  @include breakpoint(small only) { 
+    text-align: center;
+  }
+}
+
+.endorser--pic { 
+  margin: 0 auto $gutter; 
+  display: block; 
+  max-width: 140px; 
+}
+
+
+.section--endorsements { 
+  text-align: center; 
+}
+
+.section--endorsements .button { 
+  margin-top: $gutter; 
+}

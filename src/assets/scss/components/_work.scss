@@ -1,0 +1,14 @@
+.content-portfolio { 
+  padding-top: 0 !important; 
+  @include breakpoint(large) { 
+    padding-top: 0 !important; 
+  } 
+}
+
+.portfolio--preview--image { 
+  margin-bottom: 80px; 
+}
+
+.content-portfolio .block-links { 
+  margin-top: 40px; 
+}

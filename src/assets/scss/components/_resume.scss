@@ -1,0 +1,71 @@
+
+// The section heading
+
+.my--resume--block { 
+  .button { margin-top: $gutter/1.5; }
+  @include breakpoint(small only) { 
+    .section--heading { 
+      text-align: center; 
+    }
+    .lead { 
+      text-align: center; 
+    }
+    .button { 
+      margin-bottom: 30px;        
+    }
+  }
+}
+
+.item--heading { 
+  margin-top: $gutter / 2; 
+}
+
+.list--outer { 
+  display: block;
+  margin-left: 0; 
+  margin-bottom: rem-calc(20);
+
+  @include breakpoint(small only) { 
+    margin-bottom: 0;
+  }
+}
+
+
+// The entire container
+.resume-content-item {
+  @include breakpoint(medium down) { 
+    text-align: center; 
+
+    .list--icon { 
+      margin-top: $gutter / 2; 
+    }
+
+    .approach-desc { 
+      margin-bottom: $gutter / 2; 
+    }    
+
+    .button { 
+      margin-top: $gutter; 
+    }
+
+    .item--heading { 
+      margin-top: 0;
+    }
+  
+  }
+
+}
+
+.position--subhead { 
+  font-weight: 500; 
+  font-size: rem-calc(20);
+}
+
+
+// Breakpoints
+
+
+
+
+
+

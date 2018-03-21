@@ -12,53 +12,46 @@ $gutter: 30px;
 // @include foundation-flex-grid;
 @include foundation-typography;
 @include foundation-button;
-@include foundation-forms;
+// @include foundation-forms;
 // @include foundation-range-input;
-@include foundation-accordion;
-@include foundation-accordion-menu;
-@include foundation-badge;
-@include foundation-breadcrumbs;
-@include foundation-button-group;
-@include foundation-callout;
-@include foundation-card;
-@include foundation-close-button;
-@include foundation-menu;
-@include foundation-menu-icon;
-@include foundation-drilldown-menu;
-@include foundation-dropdown;
-@include foundation-dropdown-menu;
-@include foundation-responsive-embed;
-@include foundation-label;
-@include foundation-media-object;
+// @include foundation-accordion;
+// @include foundation-accordion-menu;
+// @include foundation-badge;
+// @include foundation-breadcrumbs;
+// @include foundation-button-group;
+// @include foundation-callout;
+// @include foundation-card;
+// @include foundation-close-button;
+// @include foundation-menu;
+// @include foundation-menu-icon;
+// @include foundation-drilldown-menu;
+// @include foundation-dropdown;
+// @include foundation-dropdown-menu;
+// @include foundation-responsive-embed;
+// @include foundation-label;
+// @include foundation-media-object;
 @include foundation-off-canvas;
-@include foundation-orbit;
-@include foundation-pagination;
-@include foundation-progress-bar;
+// @include foundation-orbit;
+// @include foundation-pagination;
+// @include foundation-progress-bar;
 // @include foundation-progress-element;
 // @include foundation-meter-element;
-@include foundation-slider;
-@include foundation-sticky;
-@include foundation-reveal;
-@include foundation-switch;
-@include foundation-table;
-@include foundation-tabs;
-@include foundation-thumbnail;
-@include foundation-title-bar;
-@include foundation-tooltip;
+// @include foundation-slider;
+// @include foundation-sticky;
+// @include foundation-reveal;
+// @include foundation-switch;
+// @include foundation-table;
+// @include foundation-tabs;
+// @include foundation-thumbnail;
+// @include foundation-title-bar;
+// @include foundation-tooltip;
 @include foundation-top-bar;
 @include foundation-visibility-classes;
-@include foundation-float-classes;
+// @include foundation-float-classes;
 // @include foundation-flex-classes;
 
 @include motion-ui-transitions;
 @include motion-ui-animations;
-
-//Particle JS
-
-#particles-js {
-  background: $primary-color;
-}
-
 
 // Website SCSS
 
@@ -69,117 +62,256 @@ $gutter: 30px;
 @import 'components/content_blocks';
 @import 'components/buttons';
 
-.content-portfolio { 
-  padding-top: 0 !important; 
-  @include breakpoint(large) { 
-    padding-top: 0 !important; 
+@import 'components/approach';
+@import 'components/services';
+@import 'components/endorsements';
+@import 'components/about';
+@import 'components/work';
+@import 'components/resume';
+
+
+
+
+.metadata { 
+  font-size: rem-calc(16);
+  font-weight: 500;
+  margin-top: $gutter / 2;
+  color: $primary-color;
+  &.reversed--text { 
+    color: $secondary-color;
+  }
+}
+
+.portfolio-hero .section--heading {
+  margin-top: $gutter / 1.33; 
+
+  @include breakpoint(medium) { 
+    margin-top: $gutter; 
+  }
+  @include breakpoint(large up) { 
+    margin-top: $gutter * 1.33; 
+  }  
+}
+
+.portfolio-pic { 
+  margin-top: $gutter / 1.33; 
+  @include breakpoint(medium) {   
+    margin-top: $gutter; 
+  }
+  @include breakpoint(large up) { 
+    margin-top: $gutter * 2;
   } 
 }
 
-.portfolio--preview--image { 
-  margin-bottom: 80px; 
+.thumb--fundboxpay { 
+  position: relative;
+  bottom: -75px;
+  z-index: 2;
+  margin-bottom: 0 !important;   
+}   
+
+.thumb--samsungone { 
+  position: relative;
+  bottom: -75px;
+  z-index: 2;
+  left: 50%;
+  margin-bottom: 0 !important; 
+  margin-left: -230px !important;
 }
 
-.content-portfolio .block-links { 
-  margin-top: 40px; 
+.portfolio--fundboxpay { 
+  .block-links { 
+    margin-bottom: - $gutter * 1.5 !important;
+  }
 }
 
+.portfolio--samsungone {
+  .block-links { 
+    margin-bottom: - $gutter * 1.5 !important;
+  }
+} 
 
-.my--resume--block { 
-  @include breakpoint(small only) { 
-    text-align: center; 
-    .button { 
-      margin-bottom: 50px; 
+.portfolio-content-item { 
+  overflow: hidden; 
+  .section--heading { 
+    margin-top: $gutter; 
+  }
+
+  .block-links { 
+    margin-top: $gutter;
+    margin-bottom: $gutter;   
+  }
+
+  .portfolio--thumb { 
+    display: block; 
+    margin: $gutter / 2 auto $gutter / 2;     
+    &.thumb--ipadonly { 
+      margin-bottom: $gutter * 1.5; 
     }
   }
 }
 
-.content-item { 
-  margin-top: -1px; 
-  padding-top: 50px; 
-  padding-bottom: 50px; 
-  @include breakpoint(large) { 
-    padding-top: 100px;
-    padding-bottom: 100px;
+
+
+@include breakpoint(small only) { 
+  .thumb--samsungone { 
+    margin-left: -130px !important;
+    bottom: -35px;
+  }  
+  .thumb--fundboxpay { 
+    bottom: -30px; 
+    margin-bottom: 0;     
+  }
+  .portfolio--samsungone .block-links { 
+    margin-bottom: -20px !important;
+  }
+
+  .portfolio--fundboxpay .block-links { 
+    margin-bottom: -20px !important;
+  }
+
+  .portfolio-content-item { 
+    padding-top: $gutter !important;
+    padding-left: $gutter / 4; 
+    padding-right: $gutter / 4; 
+    .section--heading { 
+      font-size: rem-calc(26);
+      line-height: rem-calc(28);
+    }
+    .lead { 
+      font-size: rem-calc(16);
+    }
+    .portfolio--thumb { 
+      margin-bottom: $gutter; 
+      max-height: 280px;  
+
+      &.thumb--ipadonly { 
+        max-height: 220px;
+      }
+
+      &.thumb-phoneonly { 
+        max-height: 220px;
+      }      
+    }
   }
 }
 
-.shape-above { 
-  @include breakpoint(xlarge) { height: 300px; }  
-  @include breakpoint(large) { height: 150px; }
-  @include breakpoint(medium) { height: 75px; }
-  margin-top: 1px; 
-  height: 40px; 
-  clear: both; 
-  display: block; 
-  width: 100%; 
-  background-color: $primary-color; 
-  -webkit-clip-path: polygon(100% 0, 0 100%, 100% 100%);
-  clip-path: polygon(100% 0, 0 100%, 100% 100%);
-}
+@include breakpoint(small landscape only) { 
 
-.shape-below { 
-  @include breakpoint(xlarge) { height: 300px; }
-  @include breakpoint(large) { height: 150px; }
-  @include breakpoint(medium) { height: 75px; }  
-  margin-top: -1px; 
-  height: 40px;
-  clear: both; 
-  display: block; 
-  width: 100%; 
-  background-color: $primary-color;   
-  -webkit-clip-path: polygon(100% 0, 0 0, 100% 100%);
-  clip-path: polygon(100% 0, 0 0, 100% 100%);
-}
+  .portfolio-content-item { 
+    .section--heading { 
+      font-size: rem-calc(26);
+      line-height: rem-calc(28);
+    }
+    .lead { 
+      font-size: rem-calc(16);
+    }    
+    .portfolio--thumb { 
+      margin-bottom: $gutter; 
 
-.home--links { 
-  margin-top: rem-calc(30); 
-}
+      max-height: 280px;  
 
-.reversed--text { 
-  color: $secondary-color; 
-  a { 
-    color: $secondary-color; 
+      &.thumb--ipadonly { 
+        max-height: 220px;
+      }
+
+      &.thumb--ipadonly { 
+        max-height: 220px;
+      }      
+    }
   }
-  a:hover { 
-    color: $secondary-color;
+
+  .thumb--samsungone { 
+    margin-left: -170px;
+  }   
+
+}
+
+
+@include breakpoint(medium only) { 
+  .portfolio-content-item { 
+    .section--heading { 
+      line-height: rem-calc(36); 
+      font-size: rem-calc(36);
+    }
+    .lead { 
+      font-size: rem-calc(18);
+      line-height: rem-calc(24);
+    }      
+    .portfolio--thumb {    
+      max-height: 200px !important;   
+
+      &.thumb--ipadonly { 
+        max-height: 400px;
+      }
+
+      &.thumb-phoneonly { 
+        max-height: 300px; 
+      }
+
+      &.thumb--fundboxpay {
+        max-height: 500px;  
+      }
+
+      &.thumb--samsungone {
+        max-height: 400px;
+      }
+
+    }
+  }  
+}
+
+@include breakpoint(medium landscape only) {
+  .portfolio-content-item {   
+    .portfolio--thumb {    
+      max-height: 350px !important;   
+      &.thumb--ipadonly { 
+        max-height: 300px !important;
+      }
+
+      &.thumb-phoneonly { 
+        max-height: 300px !important; 
+      }
+
+      &.thumb--fundboxpay {
+        max-height: 500px !important;  
+      }
+
+      &.thumb--samsungone {
+        max-height: 400px !important;
+      }
+
+    }
+  }    
+} 
+
+@include breakpoint(large up) { 
+  .portfolio-content-item {     
+    .section--heading { 
+      line-height: rem-calc(42); 
+      font-size: rem-calc(42);
+    }
+    .lead { 
+      font-size: rem-calc(21); 
+      line-height: rem-calc(28);  
+    }    
+    .portfolio--thumb { 
+      max-height: 400px;   
+      &.thumb--ipadonly { 
+        max-height: 400px;
+      }
+      &.thumb-phoneonly { 
+        max-height: 300px; 
+      }
+
+      &.thumb--fundboxpay {
+        max-height: 500px;  
+      }
+
+      &.thumb--samsungone {
+        max-height: 400px;
+      }
+
+    }
   }
-  a:active { 
-    color: $secondary-color;
-  }
-}
-
-.profile-pic { 
-  @include breakpoint(large) { 
-    margin-top: 120px; 
-  }
-  border: 3px solid $secondary-color;
-  border-radius: 50%; 
-  text-align: center; 
-  margin-bottom: $gutter; 
-}
-
-.endorser--pic { 
-  margin: 0 auto $gutter; 
-  display: block; 
-}
-
-.page--about { 
-  @include breakpoint(large) { padding-top: 0; }  
-}
-
-.bio--section { 
-  text-align: center; 
-}
-
-.founders--story .section--heading { 
-  margin-bottom: $gutter;
-}
-
-.section--endorsements { 
-  text-align: center; 
-}
-
-.section--endorsements .button { 
-  margin-top: $gutter; 
 }

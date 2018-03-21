@@ -1,32 +1,40 @@
-  <div id="offcanvas-full-screen" class="offcanvas-full-screen" data-off-canvas data-transition="overlap">
-    <div class="offcanvas-full-screen-inner">
-      <button class="offcanvas-full-screen-close" aria-label="Close menu" type="button" data-close>
-        <span aria-hidden="true">&times;</span>
-      </button>
+<div id="offcanvas-full-screen" class="offcanvas-full-screen" data-off-canvas data-transition="overlap">
+  <div class="offcanvas-full-screen-inner">
+    <button class="offcanvas-full-screen-close" aria-label="Close menu" type="button" data-close>
+      <span aria-hidden="true">&times;</span>
+    </button>
 
-      <ul class="offcanvas-full-screen-menu">
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="/approach.html">Approach</a></li>
-        <li><a href="/capabilities.html">Capabilities</a></li>
-        <li><a href="/work.html">Work Experience</a></li>
-        <li><a href="/contact.html">About &amp; Contact</a></li>
-      </ul>
-    </div>
+    <ul class="offcanvas-full-screen-menu">
+      <li><a href="/index.html">About Alok</a></li>
+      <li><a href="/portfolio.html">Portfolio</a></li>
+    </ul>
   </div>
+</div>
 
-  <div class="off-canvas-content" data-off-canvas-content>
-    <header class="top-bar">
-      <div class="top-bar-right">
-        <button class="menu-icon dark" type="button" data-toggle="offcanvas-full-screen"></button>
-      </div>
-    </header>
-  </div>
-  {{#unlesspage 'index'}}
-  <div class="row block">
-    <div class="small-12 columns">
-      <h1 class="logo--not--index">
-        <a href="index.html"><span>Mechanism(M)</span></a>
-      </h1>
+
+<div class="off-canvas-content" data-off-canvas-content>
+  <header class="top-bar">
+    <div class="top-bar-right">
+        <button class="menu-icon dark" type="button" data-toggle="offcanvas-full-screen">
+          {{#ifpage 'index'}}
+            <span class="menu">Navigate</span> <img src="./assets/img/hamburger-blue.svg" alt="Menu">
+          {{/ifpage}}
+          {{#unlesspage 'index'}}
+            <span class="menu reversed--text">Navigate</span> <img src="./assets/img/hamburger-yellow.svg" alt="Menu">
+          {{/unlesspage}} 
+        </button>
     </div>
+  </header>
+</div>
+
+
+{{#unlesspage 'index'}}
+<!-- <div class="row block">
+  <div class="small-12 columns">
+    <h1 class="logo--not--index">
+      <a href="index.html"><span>Mechanism(M)</span></a>
+    </h1>
   </div>
-  {{/unlesspage}}
+</div>
+ -->
+ {{/unlesspage}}

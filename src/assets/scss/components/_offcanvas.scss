@@ -16,13 +16,7 @@ $offcanvas-full-screen-closebutton-size: 4rem;
   box-shadow: 0 7px 0 $primary-color, 0 14px 0 $primary-color;
 }
 
-.offcanvas-full-screen-close { 
-  position: absolute;
-  top: 0; 
-  right: 14px; 
-  font-weight: 100;
-  color: $secondary-color;
-}
+
 
 .offcanvas-full-screen {
   @include off-canvas-base($background: $offcanvas-full-screen-bg, $transition: 0.3s ease-in-out);
@@ -50,10 +44,15 @@ $offcanvas-full-screen-closebutton-size: 4rem;
   }
 }
 
+
 .offcanvas-full-screen-close {
-  color: $white;
-  font-size: $offcanvas-full-screen-closebutton-size;
+  position: absolute;
+  top: 0; 
+  right: 14px; 
+  font-weight: 100;
+  font-size: rem-calc(42);
+  color: $secondary-color !important;
   &:hover { 
-    font-weight: 100; 
+    font-weight: 300; 
   }
 }
