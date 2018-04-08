@@ -8,12 +8,12 @@ $offcanvas-full-screen-closebutton-size: 4rem;
 
 .page__home .menu-icon.dark::after { 
   background: $secondary-color;
-  box-shadow: 0 7px 0 $secondary-color, 0 14px 0 $secondary-color;  
+  box-shadow: 0 0 0 $secondary-color, 0 0 0 $secondary-color;  
 }
 
 .page__not__home .menu-icon.dark::after {  
   background: $primary-color;
-  box-shadow: 0 7px 0 $primary-color, 0 14px 0 $primary-color;
+  box-shadow: 0 0 0 $primary-color, 0 0 0 $primary-color;
 }
 
 
