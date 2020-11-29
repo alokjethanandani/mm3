@@ -50,13 +50,13 @@ $global-font-size: 100%;
 $global-width: rem-calc(960);
 $global-lineheight: 1.5;
 $foundation-palette: (
-  primary: #FFFF00,
+  primary: #F0C100,
   secondary: #1B003C,
   success: #00F5FC,
   warning: #FC8A00,
   alert: #FC0000,
 );
-$tertiary-color: #6B4796; 
+$tertiary-color: #1B003C; 
 $black: #000;
 $white: #fff;
 $light-gray: lighten($black, 75%);
@@ -64,7 +64,7 @@ $medium-gray: lighten($black, 50%);
 $dark-gray: lighten($black, 25%);
 $body-background: #1B003C;
 $body-font-color: $white;
-$body-font-family: 'din-2014', 'Source Sans Pro', Helvetica, Roboto, Arial, sans-serif;
+$body-font-family: Roboto, Helvetica, Arial, sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;

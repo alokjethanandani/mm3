@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="150px" height="44px" viewBox="0 0 150 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
-    <title>magento</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-702.000000, -1656.000000)">
-        <g id="magento" transform="translate(702.000000, 1656.000000)" fill="#FCFC00">
+<svg width="180px" height="80px" viewBox="0 0 180 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>magento-yellow</title>
+    <g id="magento-yellow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="magento-logo-no-border" transform="translate(15.000000, 18.000000)" fill="#F0C100">
             <path d="M18.4881263,0 L0,11.2802952 L0,32.7182553 L4.80130699,35.5654165 L4.80130699,14.1274563 L18.4920842,5.74432969 L32.1936557,14.1140485 L32.2512253,14.1481115 L32.2454683,35.5331653 L37,32.7182553 L37,11.2802952 L18.4881263,0 L18.4881263,0 Z M20.9351953,13.1968836 L20.9351953,38.2600188 L18.4881263,39.7674886 L16.0385386,38.2542208 L16.0385386,13.2168141 L9.69760386,17.1496434 L9.69760386,38.5825303 L18.4881263,44 L27.3534892,38.5444812 L27.3534892,17.1347861 L20.9351953,13.1968836 L20.9351953,13.1968836 Z" id="Fill-1"></path>
             <path d="M9.69760386,17.0693528 L16.0385386,20.9502267 L16.0385386,13.1549361 L9.69760386,17.0693528 L9.69760386,17.0693528 Z M20.9351953,13.1350989 L20.9351953,21 L27.3534892,17.0545651 L20.9351953,13.1350989 L20.9351953,13.1350989 Z M37,11.2274835 L18.4881263,0 L0,11.2274835 L4.80130699,14.0613149 L18.4920842,5.71743611 L32.2512253,14.0818735 L37,11.2274835 L37,11.2274835 Z" id="Fill-2"></path>
             <polyline id="Fill-3" points="65.3116271 31.9095145 64.026719 15.2723149 57.515527 32 55.394921 32 48.8830039 15.2723149 47.6285507 31.9095145 45 31.9095145 46.6427536 11 50.1077272 11 56.5297298 28.1514223 62.9517324 11 66.3866137 11 68 31.9095145 65.3116271 31.9095145"></polyline>

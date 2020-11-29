@@ -49,10 +49,10 @@
 
 
 .bio--copy { 
+  font-size: rem-calc(21);
+  line-height: rem-calc(28);
   margin-top: $gutter/2; 
   margin-bottom: $gutter;
-  font-size: rem-calc(16);
-  line-height: rem-calc(24);
 
   @include breakpoint(small only) { 
     @media (orientation: landscape) { 
@@ -64,13 +64,13 @@
   
   @include breakpoint(medium only) { 
     $margin-top: $gutter * 1.5; 
-    font-size: rem-calc(18);
+    font-size: rem-calc(32);
   }
 
   @include breakpoint(large up) { 
     margin-top: $gutter; 
-    font-size: rem-calc(21);
-    line-height: rem-calc(28);
+    font-size: rem-calc(32);
+    line-height: rem-calc(40);
   }
 }
 

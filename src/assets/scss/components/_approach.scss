@@ -32,8 +32,15 @@
     margin-top: $gutter; 
   }
   .lead { 
+    font-size: rem-calc(24);
+    line-height: rem-calc(32);
+    font-weight: 300;
+    @include breakpoint(small only) { 
+      font-size: rem-calc(18);
+      line-height: rem-calc(24);
+    } 
     @include breakpoint(medium up) { 
-      width: 70%; 
+      width: 90%; 
       margin: 0 auto $gutter / 2;
     }  
      
