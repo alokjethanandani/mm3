@@ -149,7 +149,26 @@ $gutter: 30px;
       margin-bottom: $gutter * 1.5; 
     }
   }
+
+  .casestudy--thumb {
+    margin: $gutter / 2 auto $gutter / 2;     
+  }
+
+  .thumb--no_magin_bottom { 
+    margin-bottom: 0;  
+   }
+
 }
+
+.remove-top-padding-for-row { 
+  padding-top: 0;
+}
+
+
+.portfolio-bottom-padding-removed { 
+  padding-bottom: 0; 
+}
+
 
 
 

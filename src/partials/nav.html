@@ -16,12 +16,13 @@
   <header class="top-bar">
     <div class="top-bar-right">
         <button class="menu-icon dark" type="button" data-toggle="offcanvas-full-screen">
-          {{#ifpage 'index'}}
-            <span class="menu">Navigate</span> <img src="./assets/img/hamburger-blue.svg" alt="Menu">
-          {{/ifpage}}
-          {{#unlesspage 'index'}}
-            <span class="menu reversed--text">Navigate</span> <img src="./assets/img/hamburger-yellow.svg" alt="Menu">
-          {{/unlesspage}} 
+          {{#ifpage 'index' 'case-study-fundbox' 'case-study-paypal' 'case-study-counsyl'}}
+            <span class="menu">Navigate</span> <img src="./assets/img/hamburger-blue.svg" alt="Navigation menu">
+          {{/ifpage}}     
+
+          {{#ifpage 'portfolio'}}
+            <span class="menu reversed--text">Navigate</span> <img src="./assets/img/hamburger-yellow.svg" alt="Navigation menu">
+          {{/ifpage}} 
         </button>
     </div>
   </header>
