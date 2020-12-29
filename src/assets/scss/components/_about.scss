@@ -84,6 +84,33 @@
   }
 }
 
+.inline-links { 
+  margin-left: 0;
+  padding-left: 0; 
+  display: block;
+
+  li { 
+    display: inline-block;
+    padding-right: $gutter; 
+    list-style: none;     
+    padding-left: none;
+    margin-left: none;      
+    border: none; 
+  }
+  li:last-child { 
+    padding-right: 0; 
+  }
+
+  .button { 
+    margin-bottom: $gutter / 4;
+  }
+  .link-button { 
+    margin-top: $gutter / 4; 
+    display: inline; 
+  }
+}
+
+
 
 .bio--heading { 
   font-size: rem-calc(36);

@@ -150,6 +150,10 @@ $gutter: 30px;
     }
   }
 
+  .casehero--thumb { 
+    margin-top: 100px; 
+  }
+
   .casestudy--thumb {
     margin: $gutter / 2 auto $gutter / 2;     
   }
@@ -159,6 +163,8 @@ $gutter: 30px;
    }
 
 }
+
+
 
 .remove-top-padding-for-row { 
   padding-top: 0;
